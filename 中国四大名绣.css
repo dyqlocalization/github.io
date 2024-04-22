@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size:20px
+    margin: 10;
+    padding: 0;
+    background-color: azure;
+    box-sizing: border-box
+    line-height: 2.5
+}
+
+header {
+    background-color: #448097;
+    color: #6e2f74;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size:16px
+}
+
+header h1 {
+    margin: 0;
+    font:italic
+    color: #6e2f74;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size:16px
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding:20px
+    line-height: 2.5
+    margin: 10;
+    font-size:20px
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
+}
+
+.gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+img {
+    width: 500px; /* 设置图片宽度为200像素 */
+    height: auto; /* 让浏览器自动计算图片高度，保持宽高比 */
+}
